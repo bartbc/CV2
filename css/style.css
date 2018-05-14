@@ -1,6 +1,4 @@
-body {
-	background-color: rgba(201, 198, 198, 0.289); 
-}
+/* ----------------------- Grid----------------------- */
 .gridPrincipal{
 	display: grid; 
 	grid-template-columns: 1fr auto 1fr;
@@ -15,21 +13,33 @@ body {
 aside {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
-	color:white;
-	background-color: #5DA4D9;
 	margin-bottom: 15px;
-	/* padding-left: 5px */
 }
 main section {
 	display: grid;
 	grid-template-columns: 1fr 5fr;
-	background-color: white;
 	margin-bottom: 20px;
-	color: grey;
+}
+.inline {
+	display: flex;
 }
 aside, section {
 	box-shadow: 5px 5px #b5b6b6;
 }
+
+/*-------------------hr	-------------------*/
+aside hr {
+	padding:1px;
+	margin: 25px 0 10px 0;
+	border:0;
+	background-color: rgb(97, 97, 245);
+}
+main hr {
+padding:1px;
+background: grey;
+border:0;
+}
+/*-------------------Photo et position du nom	-------------------*/
 .photo {
 	background-image: url("../img/maPhoto.jpg");
 	background-size: 133%;
@@ -37,7 +47,6 @@ aside, section {
 	grid-row-start: 1;
 	grid-column: 1 / span 2;
 	margin-bottom: 20px;
-
 } 
 .posNom {
 	padding-top: 150px;
@@ -45,7 +54,6 @@ aside, section {
 	grid-row-start: 1;
 	z-index: 1;
 }
-
 /*-------------------ICONES	-------------------*/
 aside .sizeIcons {
 	color:white;
@@ -61,55 +69,42 @@ main .sizeIcons {
     margin: 10px;
     padding: 10px;
 }
-
-
-i {
-	margin: 20px;
-}
-main h5, .bloc3 {
-	color: #5DA4D9;
-}
-h2, h4 {
-	margin: 20px 0;
-}
-h3 {
-	margin: 10px 0 0 0;
-}
-h4 {
-	margin: 13px 0 0 0;
-}
-h5 {
-	margin: 0px 10px 0 0;
-}
-h6 {
-	margin: 5px;
-}
-
-aside hr {
-	padding:1px;
-	margin: 25px 0 10px 0;
-	border:0;
-	background-color: #0000ff;
-}
-main hr {
-padding:1px;
-background: grey;
-border:0;
-}
-
-main p {
+/* ----------------------- Fonts ----------------------- */
+p {
 	font-size: 0.75em;
-	/* padding-bottom: 20px; */
+}
+/* ----------------------- Gestion des couleurs ----------------------- */
+body {background-color: rgba(201, 198, 198, 0.289);}
+main h5, .bloc3 {color: #5DA4D9;}
+aside {	
+	color:white;
+	background-color: #5DA4D9;
+}
+main {
+	background-color: white;
+	color: grey;
+}
+/*-------------------autre margin et padding	-------------------*/
+i {margin: 20px;}
+h2, h4 {margin: 20px 0;}
+h3 {margin: 10px 0 0 0;}
+h4 {margin: 13px 0 0 0;}
+h5 {margin: 0px 10px 0 0;}
+h6 {margin: 5px;}
+main p {
 	margin-bottom: 20px;
 	padding-right: 10px;
 }
 aside p {
 	margin-top: 5px;
-	font-size: 0.75em;
 }
-.inline {
-	display: flex;
-}
+
+
+
+
+
+
+/*-------------------	-------------------*/
 input[type="range"] {
 		width: auto;
 		margin-top: 10px;
